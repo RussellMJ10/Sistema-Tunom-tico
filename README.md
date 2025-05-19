@@ -24,7 +24,8 @@ El sistema busca automatizar y digitalizar todo el proceso de reserva, confirmac
 
 ## 🔹 1. Diagrama de Casos de Uso UML
 
-![Diagrama de Casos de Uso](imagenes/casos_de_uso_tunomatico.png)
+![Captura de pantalla 2025-05-18 205239](https://github.com/user-attachments/assets/426d899d-69c9-4740-9527-9e083a0b72ec)
+
 
 ### Descripción general
 
