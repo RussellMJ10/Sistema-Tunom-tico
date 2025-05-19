@@ -57,7 +57,7 @@ El análisis funcional identificó claramente los actores y casos de uso princip
 
 ## 🔹 2. Diagrama de Clases UML con Patrones Aplicados
 
-![Diagrama de Clases UML](imagenes/diagrama_clases_tunomatico.png)
+![deepseek_mermaid_20250519_294b92](https://github.com/user-attachments/assets/3d15b759-8cf0-4a43-8d9b-f82f0fd8664d)
 
 ### 🧩 Justificación Arquitectónica y Patrones Aplicados
 
@@ -99,7 +99,7 @@ Facilitar la adaptación y expansión hacia nuevas plataformas y dispositivos si
 
 ## 🔹 3. Diagrama de Implementación UML
 
-![Diagrama de Implementación UML](imagenes/diagrama_implementacion_tunomatico.png)
+![deepseek_mermaid_20250519_f120e7](https://github.com/user-attachments/assets/66c2acb4-746d-4511-8c90-998c89b9681f)
 
 ### Despliegue físico y decisiones técnicas
 
