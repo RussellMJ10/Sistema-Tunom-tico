@@ -24,8 +24,7 @@ El sistema busca automatizar y digitalizar todo el proceso de reserva, confirmac
 
 ## 🔹 1. Diagrama de Casos de Uso UML
 
-![Captura de pantalla 2025-05-18 205239](https://github.com/user-attachments/assets/426d899d-69c9-4740-9527-9e083a0b72ec)
-
+![Captura de pantalla 2025-05-16 185239](https://github.com/user-attachments/assets/11649eb8-55cc-4d72-b37e-1a210a4cfe9d)
 
 ### Descripción general
 
@@ -58,7 +57,7 @@ El análisis funcional identificó claramente los actores y casos de uso princip
 
 ## 🔹 2. Diagrama de Clases UML con Patrones Aplicados
 
-![deepseek_mermaid_20250519_294b92](https://github.com/user-attachments/assets/3d15b759-8cf0-4a43-8d9b-f82f0fd8664d)
+![Captura de pantalla 2025-05-16 183012](https://github.com/user-attachments/assets/abb6b753-38d4-4731-941c-c731cd622908)
 
 ### 🧩 Justificación Arquitectónica y Patrones Aplicados
 
@@ -100,7 +99,7 @@ Facilitar la adaptación y expansión hacia nuevas plataformas y dispositivos si
 
 ## 🔹 3. Diagrama de Implementación UML
 
-![deepseek_mermaid_20250519_f120e7](https://github.com/user-attachments/assets/66c2acb4-746d-4511-8c90-998c89b9681f)
+![Captura de pantalla 2025-05-16 183118](https://github.com/user-attachments/assets/6b6ce31f-e671-4efc-98ad-b99b7bbfd84e)
 
 ### Despliegue físico y decisiones técnicas
 
