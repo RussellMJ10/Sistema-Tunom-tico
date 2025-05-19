@@ -28,31 +28,53 @@ El sistema busca automatizar y digitalizar todo el proceso de reserva, confirmac
 
 ### Descripción general
 
-El análisis funcional identificó claramente los actores y casos de uso principales y secundarios, aplicando relaciones <<include>> y <<extend>> para reflejar acciones obligatorias y opcionales.
 
-**Actores principales:**
+El análisis funcional permitió identificar con claridad los actores involucrados y las funcionalidades críticas del sistema **Tunomático**. Se aplicaron correctamente las relaciones `<<include>>` y `<<extend>>` para reflejar acciones obligatorias y opcionales en los distintos flujos operativos, siguiendo buenas prácticas de diseño UML.
 
-- **Usuario:** Solicita, consulta, cancela turnos.
-- **Operador:** Administra turnos, valida solicitudes, gestiona listas de espera.
-- **Administrador:** Configura parámetros del sistema, gestiona usuarios y reportes.
-- **Sistema de Notificaciones Externo:** Envía recordatorios y confirmaciones.
-- **Sistema de Autenticación Externo:** Valida credenciales y acceso.
+---
 
-**Casos de uso destacados:**
+### 👥 Actores Principales Identificados
 
-- **Solicitar Turno:** Base para el proceso, incluye validación de datos.
-- **Confirmar Turno:** <<extend>> opcional según tipo de servicio.
-- **Cancelar Turno:** Permite liberar espacio y activar listas de espera.
-- **Generar Reportes de Uso:** <<include>> en auditorías y seguimiento administrativo.
-- **Enviar Notificaciones:** <<extend>> tras confirmación o cancelación.
-- **Administrar Configuración del Sistema:** Incluye gestión de horarios, reglas y parámetros.
+- **Usuario**: Solicita, consulta y cancela turnos de manera autónoma.
+- **Recepcionista / Operador**: Registra llegada de pacientes, gestiona turnos diarios, y emite reportes de atención.
+- **Administrador del Sistema**: Configura parámetros globales, horarios, reglas del sistema, y gestiona usuarios y auditorías.
+- **Sistema de Notificaciones Externo**: Envía confirmaciones y recordatorios de turnos vía email o SMS.
+- **Sistema de Autenticación Externo**: Valida credenciales de usuarios y controla acceso según perfil.
 
-**Justificación de relaciones:**
+---
 
-- <<include>> para procesos siempre requeridos, como validación en la solicitud o generación de reportes en auditorías.
-- <<extend>> para acciones condicionales o secundarias, como notificaciones opcionales o confirmaciones según perfil de usuario.
-- Estas relaciones aumentan la modularidad y claridad, facilitando futuras ampliaciones y mantenimiento.
+### 🧩 Casos de Uso Destacados y Relaciones Aplicadas
 
+- **Solicitar Turno**  
+  Caso de uso base del sistema, obligatorio para iniciar cualquier atención.  
+  - `<<include>>` **Validar Disponibilidad**: obligatorio para confirmar disponibilidad de turnos.  
+  - `<<extend>>` **Seleccionar Profesional Específico**: si el usuario desea o requiere un profesional particular.  
+  - `<<extend>>` **Confirmar Turno por Email/SMS**: según preferencias o configuración.
+
+- **Cancelar Turno**  
+  Permite liberar el espacio agendado.  
+  - `<<extend>>` **Enviar Notificación**: el sistema puede notificar la cancelación al paciente u operador.
+
+- **Registrar Llegada del Paciente**  
+  Ejecutado por el operador para confirmar asistencia presencial.  
+  - `<<include>>` **Generar Reporte de Atención**: para trazabilidad y estadísticas.
+
+- **Generar Reportes de Uso**  
+  Módulo de soporte para monitoreo del sistema.  
+  - `<<include>>` en procesos de auditoría, control interno y seguimiento de gestión.
+
+- **Administrar Configuración del Sistema**  
+  Caso exclusivo del administrador.  
+  - `<<include>>` **Gestionar Reglas y Parámetros**: incluye horarios, tipos de servicios, umbrales de cancelación, etc.  
+  - `<<extend>>` **Auditar Cambios del Sistema**: en contexto de seguimiento o cambios críticos.
+
+---
+
+### ✔️ Justificación de Relaciones UML
+
+- Se utilizaron relaciones `<<include>>` en procesos donde el caso de uso base **depende obligatoriamente** de otro subproceso, como en la validación al solicitar un turno o generación de reportes en auditoría.
+- Se utilizaron relaciones `<<extend>>` para modelar comportamientos **opcionales** o **contextuales**, como la confirmación del turno, la selección personalizada del profesional, o el envío de notificaciones tras ciertas acciones.
+- Estas relaciones refuerzan la **modularidad** del sistema, permiten **extender funcionalidades sin acoplamientos innecesarios**, y aseguran un diseño **escalable y mantenible** en el tiempo.
 ---
 
 ## 🔹 2. Diagrama de Clases UML con Patrones Aplicados
