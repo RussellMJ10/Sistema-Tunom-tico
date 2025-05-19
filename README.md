@@ -24,7 +24,7 @@ El sistema busca automatizar y digitalizar todo el proceso de reserva, confirmac
 
 ## 🔹 1. Diagrama de Casos de Uso UML
 
-![Captura de pantalla 2025-05-16 185239](https://github.com/user-attachments/assets/11649eb8-55cc-4d72-b37e-1a210a4cfe9d)
+![Captura de pantalla 2025-05-16 210559](https://github.com/user-attachments/assets/8d618dca-00de-4b21-808a-f7057df6bce5)
 
 ### Descripción general
 
@@ -38,8 +38,6 @@ El análisis funcional permitió identificar con claridad los actores involucrad
 - **Usuario**: Solicita, consulta y cancela turnos de manera autónoma.
 - **Recepcionista / Operador**: Registra llegada de pacientes, gestiona turnos diarios, y emite reportes de atención.
 - **Administrador del Sistema**: Configura parámetros globales, horarios, reglas del sistema, y gestiona usuarios y auditorías.
-- **Sistema de Notificaciones Externo**: Envía confirmaciones y recordatorios de turnos vía email o SMS.
-- **Sistema de Autenticación Externo**: Valida credenciales de usuarios y controla acceso según perfil.
 
 ---
 
